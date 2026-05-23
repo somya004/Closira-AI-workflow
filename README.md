@@ -1,6 +1,6 @@
 # Closira AI Customer Support Workflow
 
-A Python-based AI workflow demonstrating a four-stage customer support system for **Bloom Aesthetics Clinic**, built using the Anthropic Claude API.
+A Python-based AI workflow demonstrating a four-stage customer support system for **Bloom Aesthetics Clinic**, built using the Google Gemini API.
 
 ## What It Does
 
@@ -19,6 +19,8 @@ closira/
 ├── sop_data.json            # SOP knowledge base for Bloom Aesthetics Clinic
 ├── prompt_design.md         # Full prompt design rationale
 ├── README.md                # This file
+├── .env                     # Your API key (never commit this)
+├── .env.example             # Template for the .env file
 ├── escalation_log.json      # Auto-generated; logs all escalation events
 ├── summary_<timestamp>.json # Auto-generated; one per session
 └── test_transcripts/
@@ -32,23 +34,47 @@ closira/
 ## Requirements
 
 - Python 3.10+
-- `anthropic` Python SDK
+- `google-generativeai` Python SDK
+- `python-dotenv` for `.env` support
 
 ## Setup
 
 ### 1. Install dependencies
 
 ```bash
-pip install anthropic
+pip install google-generativeai python-dotenv
 ```
 
-### 2. Set your API key
+### 2. Set your API key via `.env` file (recommended)
+
+Create a `.env` file in the `closira/` directory:
 
 ```bash
-export ANTHROPIC_API_KEY=your_api_key_here
+cp .env.example .env
 ```
 
-On Windows (PowerShell):
+Then open `.env` and fill in your key:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+> **Important:** Never commit your `.env` file. It is already listed in `.gitignore`.
+
+#### `.env.example` (committed to repo as a template)
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+#### Alternative: set as an environment variable directly
+
+**macOS / Linux:**
+```bash
+export GEMINI_API_KEY=your_api_key_here
+```
+
+**Windows (PowerShell):**
 ```powershell
 $env:GEMINI_API_KEY = "your_api_key_here"
 ```
@@ -129,4 +155,4 @@ To adapt this for a different business, replace `sop_data.json` with your own da
 
 ## Model Used
 
-`claude-sonnet-4-20250514` via the Anthropic Messages API.
+`gemini-2.0-flash` via the Google Gemini API.
