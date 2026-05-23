@@ -9,17 +9,13 @@
 ============================================================
   Bloom Aesthetics Clinic — AI Support (powered by Closira)
 ============================================================
+You:  Hello, I'm interested in your services for my team.
 
-You: Hello, I'm interested in your services for my team.
+Bloom: Hello! We would love to help you and your team. 
 
-Bloom: Hello! We'd be delighted to tell you more about our services.
+At Bloom Aesthetics Clinic, we offer Botox (starting from £200), Dermal Fillers (starting from £250), and free initial consultations, which we highly recommend for all new clients to discuss their goals. 
 
-We offer:
-*   **Botox** (from £200)
-*   **Dermal Fillers** (from £250)
-*   **Free Initial Consultation**
-
-A consultation is highly recommended, especially for new clients, to discuss your team's needs and determine the best options.
+Would you like to book a free consultation for yourself or discuss how we can accommodate your team?
 
 Bloom: Before we continue, I'd love to learn a little more about you so we can tailor our service. May I ask you a few quick questions? (Type 'qualify' when ready, or continue chatting.)
 
@@ -31,22 +27,20 @@ Bloom: What type of business or industry are you in? (e.g., individual client, c
 You: corporate
 
 Bloom: Roughly how many team members or employees does your organisation have?
-You: Around 45 people in our company, but we typically run events for client teams of 100-500.
+You: 45
 
 Bloom: What tools or platforms are you currently using for customer communication or appointment management?
-You: WhatsApp
+You:  WhatsApp
 
 Bloom: Thank you! I've noted your details. Is there anything else I can help you with?
 
 You: What's the process for booking a group consultation?
 
-Bloom: Thank you for your interest! We're pleased to offer a free initial consultation.
-
-To book a consultation, you can contact us via WhatsApp or through our website. When you reach out, please mention that you're interested in a consultation for a group of 4, and our team will be happy to assist you in arranging the best time and discussing any specific requirements.
+Bloom: I don't have that information to hand — let me connect you with a member of our team.
 
 You: ok contact me with your team 
 
-[ESCALATION LOGGED] Reason: Customer requests direct contact from the team. | Sentiment: neutral
+[ESCALATION LOGGED] Reason: Customer requested to speak with a human/team | Sentiment: neutral
 
 Bloom: I completely understand, and I'm sorry to hear that. Please wait a moment 
 
@@ -64,21 +58,22 @@ Bloom: Thank you for your patience. We'll make sure this is resolved for you.
 
 ── Session Summary ──────────────────────────────────────
 {
-  "customer_intent": "Enquire about services for a team/group.",
+  "customer_intent": "Inquire about booking group aesthetic consultations and services for a corporate team of 45.",
   "key_details_collected": {
-    "business_type": "client",
-    "team_members_count": 4,
-    "current_communication_platform": "telegrsm"
+    "business_type": "corporate",
+    "team_size": 45,
+    "current_tools": "WhatsApp"
   },
   "sop_gaps": [
-    "Assistant did not proactively offer to take customer's contact details to arrange a callback for a group consultation, instead directing them to general contact methods (WhatsApp/website)."
+    "No information or SOP provided to the assistant regarding the booking process for group or corporate consultations."
   ],
-   "recommended_next_action": "Contact the customer directly to arrange a group consultation, as per their request.",
+  "recommended_next_action": "Have a human sales or clinic representative contact the customer directly to explain the corporate booking process and arrange the group consultation.",
   "escalated": true,
-  "escalation_reason": "Customer requests direct contact from the team rather than initiating contact themselves."
+  "escalation_reason": "The assistant was unable to answer the customer's question regarding the process for booking a group consultation, prompting a referral to a human team member."
 }
 
-[Summary saved to D:\project\assistant\summary_20260523_193614.json]
+[Summary saved to D:\project\assistant\summary_20260523_232248.json]
+
 
 Verdict: PASS
 - All 3 qualification questions asked and answered.
