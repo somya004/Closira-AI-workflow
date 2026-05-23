@@ -1,11 +1,3 @@
-# Test Transcript 1 — In-SOP Question: Botox Pricing
-
-**Scenario**: Customer asks a question that is directly covered by the SOP.
-**Expected behaviour**: AI answers accurately using SOP data only.
-
----
-
-```
 ============================================================
   Bloom Aesthetics Clinic — AI Support (powered by Closira)
   Type 'quit' or 'exit' to end the session.
