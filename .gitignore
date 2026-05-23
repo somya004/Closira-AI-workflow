@@ -1,0 +1,6 @@
+.env
+__pycache__/
+venv/
+.venv
+escalation_log.json
+summary_*.json

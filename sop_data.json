@@ -1,0 +1,45 @@
+{
+  "business": {
+    "name": "Bloom Aesthetics Clinic",
+    "hours": "Monday to Saturday, 9am to 7pm",
+    "closed_on": "Sundays and public holidays"
+  },
+  "services": [
+    {
+      "name": "Botox",
+      "price_from": 200,
+      "currency": "GBP",
+      "notes": "Price varies by area treated. Consultation recommended before booking."
+    },
+    {
+      "name": "Dermal Fillers",
+      "price_from": 250,
+      "currency": "GBP",
+      "notes": "Includes lip fillers, cheek fillers, and jawline contouring."
+    },
+    {
+      "name": "Consultation",
+      "price_from": 0,
+      "currency": "GBP",
+      "notes": "Free initial consultation available. Recommended for all new clients."
+    }
+  ],
+  "booking": {
+    "channels": ["WhatsApp", "website"],
+    "cancellation_policy": "24 hours notice required for cancellations",
+    "rescheduling": "Contact us via WhatsApp or website to reschedule"
+  },
+  "escalation_rules": {
+    "escalate_if": [
+      "complaint or dissatisfaction",
+      "medical question or health concern",
+      "pricing negotiation or discount request",
+      "more than 2 unanswered questions in a row"
+    ]
+  },
+  "general_info": {
+    "location": "Details provided upon booking confirmation",
+    "payment_methods": "Card payments accepted. Details shared at time of booking.",
+    "practitioners": "All treatments performed by qualified practitioners. Specific practitioner requests can be discussed at consultation."
+  }
+}
